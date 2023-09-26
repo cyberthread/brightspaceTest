@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/shared/Course File Templates/OSW/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="/shared/Course File Templates/OSW/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="/shared/Course File Templates/OSW/pages/../_assets/css/styles.min.css">
+  <link rel="stylesheet" href="/shared/Course File Templates/OSW/pages/../_assets/css/custom.css">
+  <title>Explore</title>
+   <style>
+:root {
+    --Ogreen: #235937;
+    --Ogreen-light: rgba(8, 25, 14, .1);
+    --white: #ffffff;
+    --black: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol.large-number li:before {
+    color: var(--Ogreen) !important;
+}
+
+h2 {
+    margin-top: 4rem !important;
+    margin-bottom: 0.25rem;
+    text-align: left;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    color: var(--Ogreen);
+    text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+    border-bottom: 1px solid var(--Ogreen);
+}
+
+a {
+    border-bottom: 1px dotted var(--Ogreen);
+}
+
+figure {
+    border: 1px solid var(--Ogreen);
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    clear: both;
+    width: 100%;
+}
+
+figure.float-right {
+    float: none !important;
+    width: 100%;
+    margin-left: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    color: var(--Ogreen);
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+blockquote {
+    margin: 3.125rem;
+}
+
+cite {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lead {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin-bottom: 3rem;
+    max-width: calc(40rem * 1.5);
+}
+
+.card,
+.card-standard {
+    border: 2px solid var(--Ogreen);
+    background-color: var(--Ogreen-light);
+}
+
+.card-super {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    border: 4px solid var(--Ogreen);
+    background-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.super-img {
+    width: 30%;
+}
+
+.card-super .card-body {
+    width: calc(70% - 6rem);
+    max-width: 40rem;
+    margin: 3rem 3rem 3rem 0;
+}
+
+
+.card-body {
+    color: var(--black);
+}
+
+
+.super-img {
+    width: 30%;
+    padding: 1rem;
+}
+
+.card-super .card-body {
+    width: calc(70% - 6rem);
+    max-width: 40rem;
+    margin: 3rem 3rem 3rem 0;
+}
+
+@media screen and (max-width: 580px){
+    .super-img {
+        width: 25%;
+        margin: 1rem auto;
+        padding: 0;
+    }
+    .card-super .card-body {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 0 0 0;
+    }
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+    color: var(--black) !important;
+    text-align: left;
+}
+
+.bg-light {
+    background-color: var(--Ogreen-light);
+}
+
+.two-col-panels {
+    margin: 3rem !important;
+}
+
+.two-col-panels .row>.card:first-child,
+.two-col-panels .row>.card:last-child {
+    padding: 0 !important;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 35.9375rem){
+    .two-col-panels .row>.card:first-child,
+    .two-col-panels .row>.card:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.icon-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 40rem;
+}
+
+.icon {
+    max-width: 10%;
+    margin-right: 1rem;
+    align-self: start;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon-body {
+    width: 90%;
+}
+
+.icon-body p,
+.card-body p {
+    margin-bottom: 0;
+}
+
+
+.jumbotron {
+    background-color: var(--Ogreen);
+    padding: 0.5rem 1rem;
+}
+
+.jumbotron .icon-body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.jumbotron p,
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron h6 {
+    color: var(--white) !important;
+}
+
+.resource-list {
+    list-style-type: none;
+}
+
+ul.resource-list,
+ul.resource-list li {
+    padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    p,
+    ul,
+    ol {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon-body p,
+    .card-body p {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .example {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        flex-direction: row;
+    }
+
+    .example .card-body {
+        width: calc(50% - 6rem);
+        max-width: 40rem;
+        margin: 3rem;
+    }
+
+    .example figure {
+        width: calc(50% - 6rem);
+        margin: 3rem;
+    }
+
+    .example .float-right {
+        order: 2;
+        margin: 3rem 3rem 3rem 0;
+    }
+
+    .example .float-left {
+        margin: 3rem 0 3rem 3rem;
+    }
+
+}
+    </style>
+
+</head><body><div class="container-fluid">
+<h1>Module name</h1>
+<p class="lead">This is 1–2 sentences regarding the content for this module. This is just another line for demonstration purposes</p>
+<div class="row">
+<div class="col-12 banner-img">
+<figure><img src="/shared/Course File Templates/OSW/pages/../_assets/img/banner_03.jpg" alt="banner">
+<figcaption>
+<p><span style="color: rgb(35, 89, 55);">Caption for the image, 1200x400 image size.</span></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p class="col-sm-10 offset-sm-1"></p>
+<h2>Background</h2>
+<p>This is where you can add background information for this module.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra. Vulputate mi sit amet mauris commodo. Ultricies mi eget mauris pharetra et. Aenean pharetra magna ac placerat vestibulum lectus. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Rhoncus dolor purus non enim praesent elementum. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Viverra maecenas accumsan lacus vel facilisis volutpat est. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Magna eget est lorem ipsum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus.</p>
+<div class="two-col-panels">
+<div class="row">
+<div class="col-sm card bg-light">
+<div class="card-body">
+<h3>Panel 1</h3>
+<p>Use panels when you want to compare and contrast or show a before and after.</p>
+</div>
+</div>
+<div class="col-sm card bg-light">
+<div class="card-body">
+<h3>Panel 2</h3>
+<p>Use panels when you want to compare and contrast or show a before and after.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra. Vulputate mi sit amet mauris commodo. Ultricies mi eget mauris pharetra et. Aenean pharetra magna ac placerat vestibulum lectus. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Rhoncus dolor purus non enim praesent elementum. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Viverra maecenas accumsan lacus vel facilisis volutpat est. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Magna eget est lorem ipsum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus.</p>
+<div class="jumbotron">
+<div class="icon-parent">
+<div class="icon"><img src="noun-think-1994811-FFFFFF%20(1).svg" alt="Pause and Reflect" title="Pause and Reflect" data-d2l-editor-default-img-style="true" style="max-width: 100%;"></div>
+<div class="icon-body">
+<h3>Pause and Reflect</h3>
+<p>Pose a question here to get participants to reflect. You challenge them to be empathetic or to think about how they could revise their practices.</p>
+</div>
+</div>
+</div>
+<!-- start video content -->
+<div class="video-wrapper">
+<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sEYVxRPLioE?wmode=opaque" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="video-text">
+<p><a class="new-window" target="_blank" id="new-window0" data-original-title="opens in new window/tab" data-toggle="tooltip" rel="noopener">View Name of Video in YouTube<span class="sr-only">(this link opens in a new window/tab)</span></a></p>
+<p><a class="new-window" target="_blank" id="new-window0" data-original-title="opens in new window/tab" data-toggle="tooltip" rel="noopener">Read Name of Video Transcript <span class="sr-only">(this link opens in a new window/tab)</span></a></p>
+</div>
+</div>
+<!-- end video content -->
+<h2>Guidelines</h2>
+<p>This contains the key guidelines for this module.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra. Vulputate mi sit amet mauris commodo. Ultricies mi eget mauris pharetra et. Aenean pharetra magna ac placerat vestibulum lectus. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Rhoncus dolor purus non enim praesent elementum. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Viverra maecenas accumsan lacus vel facilisis volutpat est. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Magna eget est lorem ipsum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus.</p>
+<!-- start example with media on right -->
+<div class="card card-standard example">
+<figure class="float-right">
+<p><img src="https://cdn.lcs.brightspace.com/templates/daylight-v2/assets/img/column_03.jpg" alt="placeholder"></p>
+<figcaption><span style="color: rgb(35, 89, 55);"><em>Caption, <a href="https://www.d2l.com/" style="color: rgb(35, 89, 55);">link example&nbsp;</a></em></span></figcaption>
+</figure>
+<div class="card-body">
+<h3>Example 1: Image to the right.&nbsp;</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+<!-- end example with media on right -->
+<p></p>
+<!-- start example with media on left -->
+<div class="card card-standard example">
+<figure class="float-left"><!-- start video content -->
+<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sEYVxRPLioE?wmode=opaque" allowfullscreen="allowfullscreen"></iframe></div>
+<!-- end video content -->
+<figcaption>
+<div class="video-text">
+<p><span style="color: rgb(0, 0, 0);"><a class="new-window" target="_blank" id="new-window0" data-original-title="opens in new window/tab" data-toggle="tooltip" rel="noopener" style="color: rgb(0, 0, 0);"></a>View Name of Video in YouTube<span class="sr-only">(this link opens in a new window/tab)</span></span></p>
+<p><span style="color: rgb(0, 0, 0);"><a class="new-window" target="_blank" id="new-window0" data-original-title="opens in new window/tab" data-toggle="tooltip" rel="noopener" style="color: rgb(0, 0, 0);"></a>Read Name of Video Transcript</span> <span class="sr-only">(this link opens in a new window/tab)</span></p>
+</div>
+</figcaption>
+</figure>
+<div class="card-body">
+<h3>Example 2: Video to the left</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+<!-- end example with media on left -->
+<p></p>
+<!-- start example with media on right -->
+<div class="card card-standard example">
+<figure class="float-right">
+<p><iframe src="/d2l/wcs/mp/mediaplayer.d2l?ou=6606&amp;entryId=fe36fe5e-d311-46ce-bf36-db9eea60d170&amp;captionsEdit=False" title="Audio Test" width="100%" height="379px" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true" style="max-width: 518px;"></iframe></p>
+<figcaption>
+<p><span style="color: rgb(35, 89, 55);"><em>This is the caption for the audio file.</em></span></p>
+<p></p>
+<p><span style="color: rgb(35, 89, 55);"><a class="new-window" target="_blank" id="new-window0" data-original-title="opens in new window/tab" data-toggle="tooltip" rel="noopener" style="color: rgb(35, 89, 55);">Read Name of Video Transcript&nbsp;<span class="sr-only">(this link opens in a new window/tab)</span></a></span></p>
+</figcaption>
+</figure>
+<div class="card-body">
+<h3>Example 3: Audio to the right.&nbsp;</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+<!-- end example with media on right -->
+<p></p>
+<!-- start example with media on left -->
+<div class="card card-standard example">
+<figure class="float-left">
+<blockquote>This is a quote by a student about their experience. <cite>—Student at SUNY Oswego</cite></blockquote>
+</figure>
+<div class="card-body">
+<h3>Example 4: Quote to the left</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>
+</div>
+</div>
+<!-- end example with media on left -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra. Vulputate mi sit amet mauris commodo. Ultricies mi eget mauris pharetra et. Aenean pharetra magna ac placerat vestibulum lectus. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Rhoncus dolor purus non enim praesent elementum. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Viverra maecenas accumsan lacus vel facilisis volutpat est. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Magna eget est lorem ipsum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus.</p>
+<p class="col-sm-10 offset-sm-1"></p>
+<ul class="resource-list">
+<li>
+<div class="resource icon-parent">
+<div class="icon"><img src="noun-bookmark-1619182-235937.svg" alt="resource" title="resource" data-d2l-editor-default-img-style="true" style="max-width: 100%;"></div>
+<div class="icon-body">
+<p><a href="https://ww1.oswego.edu/accessibility/written-and-video-tutorials" title="Written and Video tutorials on Document Accessibility">Written and Video tutorials on Document Accessibility</a>: are available on the SUNY Oswego Accessibility Resources Website</p>
+</div>
+</div>
+</li>
+<li>
+<div class="tool icon-parent">
+<div class="icon"><img src="noun-tools-5033612-235937.svg" alt="tool" title="tool" data-d2l-editor-default-img-style="true" style="max-width: 100%;"></div>
+<div class="icon-body">
+<p><a href="https://www.tpgi.com/color-contrast-checker/" title="Color Contrast Analyzer">Color Contrast Analyzer</a>: Description of the resource linked to/context</p>
+</div>
+</div>
+</li>
+</ul>
+<div class="col-12"><footer><img src="oswego_logo_horiz_grn_0.jpg" alt="State University of New York at Oswego" title="State University of New York at Oswego" width="200" height="49" style="float: right;"></footer></div>
+<p>
+<script src="/shared/Course File Templates/OSW/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+<script src="/shared/Course File Templates/OSW/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+<script src="/shared/Course File Templates/OSW/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</p>
+<!-- Template JavaScript -->
+<p>
+<script src="/shared/Course File Templates/OSW/pages/../_assets/js/scripts.min.js"></script>
+</p>
+</div></body></html>
